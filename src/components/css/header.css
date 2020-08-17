@@ -1,0 +1,14 @@
+.encabezado{
+    width: 100%;
+    position: fixed;
+    /* z-index: 1; */
+    text-align: left;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    -webkit-box-shadow: 0 1px 1px #888888;
+     -moz-box-shadow: 0 1px 1px #888888;
+     box-shadow: 0 1px 1px #888888;
+     color: palevioletred;
+     background-color: snow;
+
+}

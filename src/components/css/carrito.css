@@ -1,0 +1,14 @@
+.carrito{
+    /* position: fixed;
+    top:100px;
+    right: 30px; */
+    /* display: inline-block; */
+    width: 30%;
+    /* background-color:red; */
+    border-left: solid;
+    border-bottom: solid;
+    /* width: 400 px; */
+    float: left;
+    padding-top: 100px;
+    
+}
