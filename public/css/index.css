@@ -18,3 +18,16 @@ body{
     
     justify-content:center
 }
+
+.contenedor_categorias{
+    /* margin: 2px; */
+    padding-top: 80px;
+    padding-bottom: 70px;
+    padding-left: 20%;
+    /* width: 40%; */
+    /* display: inline-block; */
+    /* background-color: yellowgreen; */
+    float: left;
+    text-align: center;
+    /* justify-content:center */
+}

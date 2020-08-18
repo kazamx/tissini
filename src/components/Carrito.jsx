@@ -9,7 +9,8 @@ const  Carrito = ({carrito,agregarProducto}) => (
         {carrito.length===0
             // Se utiliza esto en vez de un if. Se conoce como ternario.
             ? <p>No hay elementos en el carrito</p>
-            : carrito.map(producto =>(
+            : 
+            carrito.map(producto =>(
                 
                 <Producto
                     key={producto.id}

@@ -3,12 +3,14 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Producto from './components/Producto';
 import Carrito from './components/Carrito';
+import Categoria from './components/Categoria';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import categoria from './components/Categoria';
 
 
 function App() {
@@ -21,7 +23,16 @@ function App() {
     { id:4,nombre:'Jean', precio:40, imagen:"https://api.tissini.app/img/products/textiles/jeans/2006-130_0.jpg" },
     { id:5,nombre:'Pantalón', precio:50, imagen: "https://api.tissini.app/img/products/textiles/pantalones/2006-104_0.jpg"},
     { id:6,nombre:'Ropa interior', precio:60, imagen: "https://api.tissini.app/img/products/textiles/ropa-interior/2006-156_0.jpg"},
-    { id:7,nombre:'Sport', precio:70, imagen: "https://api.tissini.app/img/products/textiles/sport/2006-111_0.jpg"}
+    { id:7,nombre:'Sport', precio:70, imagen: "https://api.tissini.app/img/products/textiles/sport/2006-111_0.jpg"},
+    { id:8,nombre:'Blusa Liah', precio:80, imagen: "https://api.tissini.app/img/products/textiles/blusas/2006-139_0.jpg"},
+    { id:9,nombre:'chaqueta', precio:90, imagen: "https://api.tissini.app/img/products/textiles/sport/2006-193_0.jpg"}
+  ]);
+
+  // State para imagenes de categorias
+  const [categorias,guardarCategorias] = useState([
+    {id:1,nom_cat:'Lo más vendido',imagen_categoria:"https://api.tissini.app/img/categories/bestsellers.png?vuetify-preload"},
+    {id:2,nom_cat:'Recomendado',imagen_categoria:"https://api.tissini.app/img/categories/recommended.png?vuetify-preload"},
+    {id:3,nom_cat:'Temporada',imagen_categoria:"https://api.tissini.app/img/categories/season.png?vuetify-preload"}
   ]);
 
   // State para un carrito de compras
@@ -41,7 +52,17 @@ function App() {
       <Switch>
 
         <Route path="/categorias">    {/* ---------------CATEGORÍAS--------------- */}
-          Categorias
+          <h1>CATEGORIAS</h1>
+          <div className="contenedor_categorias">
+          {categorias.map(categoria=>(
+          <Categoria
+            key={categoria.id}
+            categoria={categoria}
+            categorias={categorias}
+          />
+          ))}
+
+          </div>
         </Route>
         <Route path="/catalogo">      {/* ---------------CATÁLOGO--------------- */}
           
