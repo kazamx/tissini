@@ -37,7 +37,7 @@ function App() {
       <Header
       titulo='Tienda Virtual'
       />
-      {/* PRUEBA */}
+      
       <Switch>
 
         <Route path="/categorias">    {/* ---------------CATEGORÍAS--------------- */}
