@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Producto from './components/Producto';
 import Carrito from './components/Carrito';
 import Categoria from './components/Categoria';
+import Login from './Login';
 import {
   BrowserRouter as Router,
   Switch,
@@ -87,7 +88,9 @@ function App() {
         </Route>
 
         <Route path="/">                {/* ---------------Inicio--------------- */}
-          Módulo de autenticación
+          <div className="contenedor_login">
+          <Login/>
+          </div>
         </Route>
       </Switch>
       <Footer
