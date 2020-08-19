@@ -1,26 +1,45 @@
 .imagenes{
-    max-width: 200px;
-    max-height: 300px;
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 1em;
+    align-items: center;
     
 }
 
 .producto{
-    text-align: center;
-    width: 300px;
-    /* border: 1px blue dashed; */
-    /* box-shadow: 10px 5px 5px black; */
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    /* box-shadow: inset 5em 1em gold; */
-    /* box-shadow: 3px 3px gray, -1em 0 0.4em olive; */
+    margin-top: 40px;
+    width: 400px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
     
+}
+.precioboton{
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: space-between;
+    flex-wrap: wrap;
 }
 
 h3{
-    color: violet;
+    color: #f06292;
+    margin-left: 10px;
+    
 }
-
-
-
-
+.boton{
+    
+    width: 120px;
+    margin-left: 10px;
+    border-radius: 2em;
+    margin-right: 110px;
+    margin-top: 10px;
+    border:0px;
+    background-color: #f06292;
+    color: white;
+    height: 35px;
+    text-transform: uppercase;   
+}

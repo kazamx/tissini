@@ -1,22 +1,28 @@
- footer{ /*Áca se tienen que poner los estilos del footer, o sea, del contenedor */
+footer{ /*Áca se tienen que poner los estilos del footer, o sea, del contenedor */
     
     height: 50px;
     width: 100%;
     left: 0;
     bottom: 0;
-    
     position:fixed;
     background-color: snow;
-    float: left;
-
-    -webkit-box-shadow: 0px -4px 17px 2px rgba(0,0,0,0.64);
-    -moz-box-shadow: 0px -4px 17px 2px rgba(0,0,0,0.64);
-    box-shadow: 0px -4px 17px 2px rgba(0,0,0,0.64);
+    box-shadow: 0px -4px 17px 2px rgba(121, 119, 119, 0.384);
     
 }
 
- .botones{    /*Áca se tienen que poner los estilos de los botones del footer */
-    padding-left: 20%;
-    color: red;
-}
+ .icon{
+     width: 20px;
+     
+ }
+ .botones{
+     margin-right: 20px;
+     margin-left: 350px;
+     text-decoration: none;
+    }
+    
+    .botone{
+        margin-right: 20px;
+        margin-left: 20px;
+        text-decoration: none;
 
+    }

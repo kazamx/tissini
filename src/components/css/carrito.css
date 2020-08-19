@@ -1,14 +1,21 @@
 .carrito{
-    /* position: fixed;
-    top:100px;
-    right: 30px; */
-    /* display: inline-block; */
     width: 30%;
-    /* background-color:red; */
-    border-left: solid;
-    border-bottom: solid;
-    /* width: 400 px; */
     float: left;
     padding-top: 100px;
-    
+    background-color: #eee6e6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.listaProductocarrito{
+    color: rgb(82, 78, 78);
+}
+.noCarrito{
+    justify-content: space-around;
+    background-color: white;
+    height: 50px;
+    border-radius: 4px;
+    width: 400px;
+    color:#f06292;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }

@@ -1,19 +1,22 @@
-import React from 'react';
-import './css/categorias.css';
-import Producto from './Producto';
+import React from "react";
+import "./css/categorias.css";
 
-const Categoria = ({categorias,categoria}) => {
-    const {id, nom_cat, imagen_categoria} = categoria;
+const Categoria = ({ producto }) => {
+  const { nombre, precio, id, imagen, categoria } = producto;
 
-    return (
-        <div className="categoria">
-        <h2>{nom_cat}</h2>
-        <img src={imagen_categoria} className="imagenes" alt="No cargó la imagen"/>
-        <br/>  
-        
+  return (
+    <div className="categoria">
+      {producto.categoria === "lo mas vendido" ? (
+        <div>
+          <h2>categoria: {categoria}</h2>
+          <h2>{nombre}</h2>
+          <img src={imagen} className="imagenes" alt="No cargó la imagen" />
         </div>
-        
-    );
-}
+      ) : (
+        <h2></h2>
+      )}
+    </div>
+  );
+};
 
 export default Categoria;
